@@ -27,7 +27,7 @@ func main() {
 		_ = resp.Body.Close()
 
 		if err != nil {
-			_, _ = fmt.Fprintf(os.Stderr, "fetch: reading %s: %v\n", url, err)
+			_, _ = fmt.Fprintf(os.Stderr, "fetch: reading from %s: %v\n", url, err)
 			os.Exit(1)
 		}
 
